@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="styles/css/signup.min.css">
+  <!-- Scripts -->
+  <script src="scripts/script.js" defer></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Регистрация</title>
+</head>
+<body>
+  <header class="header">
+    <div class="_container header__container">
+      <a href="index.html" class="header__logo">Search Teacher</a>
+      <div class="header__auth">
+        <a href="signin.html">Вход</a> / <a href="signup.html">Регистрация</a>
+      </div>
+    </div>  
+  </header>
+  <section class="signup">
+    <h1>Регистрация</h1>
+    <form action="" class="signup__form">
+      <input
+        type="text"
+        placeholder="Имя"
+        name="name"
+      >
+      <input
+        type="text"
+        placeholder="Фамилия"
+        name="surname"
+      >
+      <input
+        type="text"
+        placeholder="Отчество"
+        name="patronymic"
+      >
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+      >
+      <input
+        type="text"
+        placeholder="Мобильный телефон"
+        name="phone"
+      >
+      <input
+        type="text"
+        placeholder="Регион проживания"
+        name="region"
+      >
+      <input
+        type="password"
+        placeholder="Пароль"
+        name="password"
+      >
+      <input
+        type="password"
+        placeholder="Повторите пароль"
+        name="repeat"
+      >
+
+      <div class="check">
+        <input type="checkbox" name="check" id="check">
+        <label for="check">Я принимаю условия <a href="#">пользовательского соглашения</a></label>
+      </div>
+
+      <button class="btn" type="submit">Зарегистрироваться</button>
+    </form>
+  </section>
+</body>
+</html>

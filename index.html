@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="styles/css/style.min.css">
+  <!-- Scripts -->
+  <script src="scripts/script.js" defer></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Learning System</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="_container header__container">
+      <a href="index.html" class="header__logo">Search Teacher</a>
+      <div class="header__auth">
+        <a href="signin.html">Вход</a> / <a href="signup.html">Регистрация</a>
+      </div>
+    </div>  
+  </header>
+  <!-- Search Teacher -->
+  <section class="search-teacher">
+    <h2>Введите название предмета</h2>
+    <form action="" class="search-teacher__input-form">
+      <input
+        type="text"
+        class="search-teacher__input"
+        name="search"
+        id="search-teacher"
+        placeholder="Найти преподавателя"  
+      >
+      <button class="search-teacher__button">
+        <img src="img/search.png" alt="search">
+      </button>
+    </form>
+  </section>
+  <!-- Teachers -->
+  <section class="teachers">
+    <div class="_container teachers__container">
+      <h1>Преподаватели</h1>
+      <div class="teacher teachers__item">
+        <div class="teacher__wrapper">
+          <div class="teacher__image">
+            <img src="img/teacher-img.png" alt="teacher">
+          </div>
+          <div class="teacher__details">
+            <div class="teacher__lesson">Английский язык</div>
+            <div class="teacher__name">Мазаев Роман Романович</div>
+          </div>
+        </div>
+        <button class="btn teacher__btn">Записаться</button>
+      </div>
+
+      <div class="teacher teachers__item">
+        <div class="teacher__wrapper">
+          <div class="teacher__image">
+            <img src="img/teacher-img.png" alt="teacher">
+          </div>
+          <div class="teacher__details">
+            <div class="teacher__lesson">Английский язык</div>
+            <div class="teacher__name">Мазаев Роман Романович</div>
+          </div>
+        </div>
+        <button class="btn teacher__btn">Записаться</button>
+      </div>
+
+      <div class="teacher teachers__item">
+        <div class="teacher__wrapper">
+          <div class="teacher__image">
+            <img src="img/teacher-img.png" alt="teacher">
+          </div>
+          <div class="teacher__details">
+            <div class="teacher__lesson">Английский язык</div>
+            <div class="teacher__name">Мазаев Роман Романович</div>
+          </div>
+        </div>
+        <button class="btn teacher__btn">Записаться</button>
+      </div>
+
+      <div class="teacher teachers__item">
+        <div class="teacher__wrapper">
+          <div class="teacher__image">
+            <img src="img/teacher-img.png" alt="teacher">
+          </div>
+          <div class="teacher__details">
+            <div class="teacher__lesson">Английский язык</div>
+            <div class="teacher__name">Мазаев Роман Романович</div>
+          </div>
+        </div>
+        <button class="btn teacher__btn">Записаться</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="subscribe__content">
+      <p>Подпишитесь, чтобы не пропустить обновления</p>
+      <button class="btn subscribe__btn">Подписаться</button>
+    </div>
+    <div class="subscribe__background"></div>
+  </section>
+</body>
+</html>

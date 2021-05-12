@@ -1,0 +1,214 @@
+// Main styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+._container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #457699;
+  border-radius: 6px;
+  color: #457699;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background-color: #457699;
+    color: #fff;
+  }
+}
+
+// Header
+.header {
+  height: 60px;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    // font-weight: 900;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__auth {
+    color: #ebebeb;
+
+    a {
+      text-decoration: none;
+      color: #898989;
+      transition: .15s ease-in-out;
+
+      &:hover {
+        color: #0c76c2;
+      }
+    }
+  }
+}
+
+// Search Teacher
+.search-teacher {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../../img/search-section-bg.png') center center/cover no-repeat;
+
+  h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  &__input-form {
+    position: relative;
+
+    input {
+      width: 800px;
+      padding: 15px 25px;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      font-size: 18px;
+
+      &::placeholder {
+        color: #c9c9c9;
+      }
+    }
+
+    .search-teacher__button {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: none;
+      outline: none;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}
+
+// Teachers
+.teachers {
+  &__container {
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin: 20px 0;
+  }
+}
+
+.teacher {
+  width: 100%;
+  padding: 27px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+}
+
+.teacher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 55px;
+    height: 55px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    margin-left: 30px;
+  }
+
+  &__lesson {
+    font-size: 20px;
+  }
+
+  &__name {
+    font-size: 16px;
+  }
+}
+
+// Subscribe
+.subscribe {
+  display: flex;
+  background-color: #e09c42;
+
+  &__content {
+    width: 45%;
+    padding: 75px;
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 40px;
+      font-weight: 900;
+      color: #fff;
+    }
+  }
+
+  &__background {
+    width: 55%;
+    background: url('../../img/subscribe-bg.png') center center/cover no-repeat; 
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+  }
+}
