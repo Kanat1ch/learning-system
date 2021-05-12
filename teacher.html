@@ -196,6 +196,7 @@
     </div>  
   </section>
 
+  <script src="https://unpkg.com/imask"></script>
   <script>
     const passwordInput = document.querySelector('#password');
     const toggleBtn = document.querySelector('.toggle-password');
@@ -209,6 +210,11 @@
         passwordInput.setAttribute('type', 'password');
       }
     })
+
+    const phoneMask = IMask(
+    document.getElementById('phone'), {
+      mask: '+{7} (000) 000-00-00'
+    });
   </script>
 </body>
 </html>
