@@ -34,16 +34,20 @@ body {
 // Header
 .header {
   height: 60px;
+  border-bottom: 1px solid #ccc;
 
   &__container {
+    width: 100%;
+    max-width: 1920px;
     height: 100%;
+    padding: 0 70px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
-    // font-weight: 900;
     font-size: 22px;
     text-decoration: none;
     color: #000;
@@ -160,12 +164,22 @@ body {
     margin-left: 30px;
   }
 
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+
   &__lesson {
     font-size: 20px;
   }
 
   &__name {
     font-size: 16px;
+  }
+
+  &__price {
+    margin-right: 60px;
+    font-size: 32px;
   }
 }
 
