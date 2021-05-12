@@ -119,5 +119,16 @@
     </div>
     <div class="subscribe__background"></div>
   </section>
+
+  <script>
+    const prices = document.querySelectorAll('.teacher__price');
+    prices.forEach(item => {
+      const output = new Intl.NumberFormat('ru-RU', {
+        style: 'currency',
+        currency: 'RUB'
+      }).format(item.textContent)
+      item.textContent = output.replace(/,../, '');
+    })
+  </script>
 </body>
 </html>
