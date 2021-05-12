@@ -5,14 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links -->
-  <link rel="stylesheet" href="styles/css/signin.min.css">
+  <link rel="stylesheet" href="styles/css/signup-selection.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Scripts -->
   <script src="scripts/script.js" defer></script>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <!-- Title -->
-  <title>Вход</title>
+  <title>Регистрация</title>
 </head>
 <body>
   <header class="header">
@@ -23,23 +24,15 @@
       </div>
     </div>  
   </header>
-  <section class="signin">
-    <h1>Вход</h1>
-    <form action="" class="signin__form">
-      <input
-        class="input"
-        type="email"
-        placeholder="Email"
-        name="email"
-      >
-      <input
-        class="input"
-        type="password"
-        placeholder="Пароль"
-        name="password"
-      >
-      <button class="btn" type="submit">Войти</button>
-    </form>
+  <section class="signup-selection">
+    <a href="signup-student.html" class="signup-selection__link">
+      <i class="signup-selection__icon fa fa-user" aria-hidden="true"></i>
+      <span class="signup-selection__label">Я студент</span>
+    </a>
+    <a href="signup-teacher.html" class="signup-selection__link">
+      <i class="signup-selection__icon fa fa-graduation-cap" aria-hidden="true"></i>
+      <span class="signup-selection__label">Я преподаватель</span>
+    </a>
   </section>
 </body>
 </html>
