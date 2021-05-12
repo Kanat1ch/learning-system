@@ -162,6 +162,7 @@ body {
   margin-right: 70px;
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -173,6 +174,33 @@ body {
 
     input {
       margin: 0;
+    }
+
+    .toggle-password {
+      position: absolute;
+      bottom: 3px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      &.show {
+        .show {
+          display: none;
+        }
+
+        .hide {
+          display: block;
+        }
+      }
+
+      .show {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
     }
   }
 }
