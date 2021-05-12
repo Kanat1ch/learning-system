@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="styles/css/teacher.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Scripts -->
+  <script src="scripts/script.js" defer></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Ученик</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">Search Teacher</a>
+      <div class="header__auth">
+        <a href="signin.html">Вход</a> / <a href="signup-selection.html">Регистрация</a>
+      </div>
+    </div>  
+  </header>
+
+  <!-- Profile -->
+  <section class="profile">
+    <div class="profile__container _container">
+      <div class="profile__image profile-image">
+        <img src="img/profile-img.jpg" alt="profile-image">
+        <div class="profile-image__upload">
+          <img src="img/upload.png" alt="upload">
+        </div>
+      </div>
+      <div class="profile__data">
+        <form action="" class="profile__form">
+          <div class="profile__form-group form-group">
+            <div class="form-group__item">
+              <label for="name">Имя</label>
+              <input name="name" id="name" type="text" class="input" value="Роман">
+            </div>
+            <div class="form-group__item">
+              <label for="surname">Фамилия</label>
+              <input name="surname" id="surname" type="text" class="input" value="Мазаев">
+            </div>
+            <div class="form-group__item">
+              <label for="patronymic">Отчество</label>
+              <input name="patronymic" id="patronymic" type="text" class="input" value="Романович">
+            </div>
+            <div class="form-group__item">
+              <label for="region">Регион проживания</label>
+              <input name="region" id="region" type="text" class="input" value="Москва">
+            </div>
+            <button class="profile__submit-btn btn">Сохранить изменения</button>
+          </div>
+
+          <div class="profile__form-group form-group">
+            <div class="form-group__item">
+              <label for="phone">Телефон</label>
+              <input name="phone" id="phone" type="text" class="input" value="+7 996 123 5555">
+            </div>
+            <div class="form-group__item">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="email" class="input" value="romic_80@mail.ru">
+            </div>
+            <div class="form-group__item">
+              <label for="password">Пароль</label>
+              <input name="password" id="password" type="password" class="input" value="12345678">
+              <div class="toggle-password">
+                <i class="show fa fa-eye" aria-hidden="true"></i>
+                <i class="hide fa fa-eye-slash" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form-group__item">
+              <label for="position">Должность</label>
+              <input name="position" id="position" type="text" class="input" value="Студент" disabled>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workspace -->
+  <section class="workspace">
+    <div class="workspace__container _container">
+      <!-- Students -->
+      <div class="students">
+        <div class="students__title">
+          <h2>Преподаватели</h2>
+          <div class="students__content">
+
+            <div class="students__item card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <img src="img/teacher-img.png" alt="image">
+                </div>
+                <div class="card__details">
+                  <div class="card__lesson">Английский язык</div>
+                  <div class="card__name">Мазаев Роман Романович</div>
+                </div>
+              </div>
+              <div class="card__contact">
+                <button class="btn">Связаться</button>
+              </div>
+            </div>
+            
+            <div class="students__item card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <img src="img/teacher-img.png" alt="image">
+                </div>
+                <div class="card__details">
+                  <div class="card__lesson">Английский язык</div>
+                  <div class="card__name">Мазаев Роман Романович</div>
+                </div>
+              </div>
+              <div class="card__contact">
+                <button class="btn">Связаться</button>
+              </div>
+            </div>
+
+            <div class="students__item card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <img src="img/teacher-img.png" alt="image">
+                </div>
+                <div class="card__details">
+                  <div class="card__lesson">Английский язык</div>
+                  <div class="card__name">Мазаев Роман Романович</div>
+                </div>
+              </div>
+              <div class="card__contact">
+                <button class="btn">Связаться</button>
+              </div>
+            </div>
+
+            <div class="students__item card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <img src="img/teacher-img.png" alt="image">
+                </div>
+                <div class="card__details">
+                  <div class="card__lesson">Английский язык</div>
+                  <div class="card__name">Мазаев Роман Романович</div>
+                </div>
+              </div>
+              <div class="card__contact">
+                <button class="btn">Связаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <script>
+    const passwordInput = document.querySelector('#password');
+    const toggleBtn = document.querySelector('.toggle-password');
+
+    toggleBtn.addEventListener('click', () => {
+      if (passwordInput.getAttribute('type') === 'password') {
+        toggleBtn.classList.add('show');
+        passwordInput.setAttribute('type', 'text');
+      } else {
+        toggleBtn.classList.remove('show');
+        passwordInput.setAttribute('type', 'password');
+      }
+    })
+  </script>
+</body>
+</html>
