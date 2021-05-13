@@ -73,7 +73,6 @@ body {
   }
 
   &__logo {
-    // font-weight: 900;
     font-size: 22px;
     text-decoration: none;
     color: #000;
@@ -115,6 +114,23 @@ body {
     align-items: center;
     flex-direction: column;
     padding-bottom: 30px;
+  }
+
+  a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  a.btn-cancel {
+    border-color: rgb(175, 54, 54);
+    color: rgb(175, 54, 54);
+
+    &:hover {
+      background-color: rgb(175, 54, 54);
+      color: #fff;
+    }
   }
 }
 
