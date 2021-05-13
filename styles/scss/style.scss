@@ -197,6 +197,7 @@ body {
   top: 60px;
   padding: 10px 0;
   background-color: #fafafa;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
   cursor: default;
   opacity: 0;
   visibility: hidden;
@@ -341,9 +342,6 @@ body {
   padding: 27px;
   border: 1px solid #dcdcdc;
   border-radius: 6px;
-}
-
-.teacher {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -430,3 +428,5 @@ body {
     }
   }
 }
+
+@import '_media';
