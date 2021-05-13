@@ -108,6 +108,26 @@
     border-width: 1px;
   }
 
+  .modal {
+    padding: 20px 30px;
+
+    &__input {
+      width: 220px;
+      padding: 10px 15px;
+    }
+
+    &__btn {
+      width: 220px;
+      padding: 10px 15px;
+    }
+
+    &__close {
+      font-size: 18px;
+      right: 10px;
+      top: 5px;
+    }
+  }
+
   .header {
     &__container {
       padding: 0 0 0 15px;
