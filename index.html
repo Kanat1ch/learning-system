@@ -120,6 +120,35 @@
     <div class="subscribe__background"></div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal">
+    <form class="modal__form" action="">
+      <div class="modal__form-item">
+        <label for="name">Имя</label>
+        <input
+          class="modal__input input"
+          type="text"
+          id="name"
+          required
+        >
+      </div>
+      <div class="modal__form-item">
+        <label for="email">Email</label>
+        <input
+          class="modal__input input"
+          type="email"
+          id="email"
+          required
+        >
+      </div>
+      <button class="modal__btn btn">Подписаться</button>
+    </form>
+    <div class="modal__close">
+      &#10006;
+    </div>
+  </div>
+  <div class="overlay"></div>
+
   <script>
     const prices = document.querySelectorAll('.teacher__price');
     prices.forEach(item => {
