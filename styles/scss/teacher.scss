@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-body {
+body, button, input {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -71,7 +71,6 @@ body {
   }
 
   &__logo {
-    // font-weight: 900;
     font-size: 22px;
     text-decoration: none;
     color: #000;
@@ -79,6 +78,9 @@ body {
 
   &__auth {
     color: #ebebeb;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     a {
       text-decoration: none;
@@ -88,6 +90,25 @@ body {
       &:hover {
         color: #0c76c2;
       }
+    }
+  }
+
+  &__auth-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 0 30px;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover, &:active {
+      background-color: #eee;
+    }
+
+    i.fa {
+      font-size: 24px;
+      color: #444;
     }
   }
 }
@@ -146,6 +167,10 @@ body {
     transition: opacity .1s ease-in-out;
 
     img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       width: 70px;
       height: 70px;
     }
@@ -177,6 +202,11 @@ body {
       width: 0;
       height: 0;
     }
+  }
+
+  &__btn {
+    width: 250px;
+    margin-top: 6px;
   }
 }
 
@@ -401,3 +431,5 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@import '_profile-media'
