@@ -1,6 +1,11 @@
 // Main styles
 @import '_main';
 
+.input {
+  width: 300px;
+  padding: 5px 10px;
+}
+
 // Header
 @import '_header';
 
