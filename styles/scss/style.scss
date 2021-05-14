@@ -1,6 +1,23 @@
 // Main styles
 @import '_main';
 
+.btn {
+  min-width: auto;
+  margin-bottom: 10px;
+}
+
+.btn.disabled {
+  cursor: not-allowed;
+  border: 2px solid #912222;
+  color: #912222;
+  
+  &:hover {
+    border: 2px solid #912222;
+    color: #912222;
+    background-color: #fff;
+  }
+}
+
 .modal {
   display: none;
   padding: 70px 130px;
