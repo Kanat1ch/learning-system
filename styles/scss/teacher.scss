@@ -55,63 +55,7 @@ body, button, input {
 }
 
 // Header
-.header {
-  height: 60px;
-  border-bottom: 1px solid #ccc;
-
-  &__container {
-    width: 100%;
-    max-width: 1920px;
-    height: 100%;
-    padding: 0 70px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__logo {
-    font-size: 22px;
-    text-decoration: none;
-    color: #000;
-  }
-
-  &__auth {
-    color: #ebebeb;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    a {
-      text-decoration: none;
-      color: #898989;
-      transition: .15s ease-in-out;
-
-      &:hover {
-        color: #0c76c2;
-      }
-    }
-  }
-
-  &__auth-icon {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    padding: 0 30px;
-    height: 100%;
-    cursor: pointer;
-
-    &:hover, &:active {
-      background-color: #eee;
-    }
-
-    i.fa {
-      font-size: 24px;
-      color: #444;
-    }
-  }
-}
+@import '_header';
 
 // Profile
 .profile {
@@ -124,12 +68,11 @@ body, button, input {
 
   &__image {
     width: 250px;
-    height: 250px;
     border-radius: 50%;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 250px;
+      height: 250px;
       object-fit: cover;
       border-radius: 50%;
     }
@@ -143,8 +86,16 @@ body, button, input {
     display: flex;
   }
 
+  &__form-group:nth-child(1) {
+    margin-right: 70px;
+  }
+
   &__submit-btn {
     margin-top: 10px;
+  }
+
+  .mobile-btn {
+    display: none;
   }
 }
 
@@ -160,8 +111,8 @@ body, button, input {
     left: 0;
     top: 0;
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.4);
     transition: opacity .1s ease-in-out;
@@ -206,14 +157,13 @@ body, button, input {
 
   &__btn {
     width: 250px;
-    margin-top: 6px;
+    margin-top: 5.5px;
   }
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
 
   &__item {
     position: relative;
@@ -432,4 +382,4 @@ body, button, input {
   }
 }
 
-@import '_profile-media'
+@import '_media-profile';
